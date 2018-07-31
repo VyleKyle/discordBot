@@ -1,6 +1,5 @@
-#Oofbot v0.6, made by VyleKyle#2754
-#I suck at coding. I have no idea what I'm doing.
-#I'm just using google and throwing things together.
+#Oofbot v0.7, made by VyleKyle#2754
+
 
 
 
