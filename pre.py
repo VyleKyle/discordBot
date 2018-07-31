@@ -24,7 +24,7 @@ async def writeSettings():
 
 
 async def permCheck(lvl, m):
-    if m.author.id == "176473884919332864": #My uID
+    if m.author.id == "176473884919332864": #My uID. You should probably replace it with your own. You can easily find it with the bot's "whoami" command.
         return True
     elif (m.author.id in admins[m.server.name]) and (lvl == "admins"):
         return True
