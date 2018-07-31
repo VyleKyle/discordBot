@@ -1,8 +1,8 @@
 import csv
 import discord
-from enum import Enum
 import pre
 
+#TODO: Implement a command to ban users from accessing the bot.
 
 commands = {}
 
