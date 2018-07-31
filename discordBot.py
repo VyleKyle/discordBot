@@ -27,15 +27,13 @@ prefix = {}
 
 #TODO Add logging literally everywhere.
 
-logger = logging.getLogger('discord') #tell the logger to exist and give it an alias
+logger = logging.getLogger('discord')
 
 logger.setLevel(logging.INFO)
 
 handler = logging.FileHandler(filename='discord.log', encoding='utf-8', mode='w')
-#part of the logger that interacts with files automagically
 
 handler.setFormatter(logging.Formatter('%(asctime)s:%(levelname)s:%(name)s: %(message)s'))
-#I can read and understand this, but I don't understand the syntax
 
 logger.addHandler(handler)
 
@@ -101,7 +99,7 @@ async def on_server_join(server):
             print("I just joined {} but I wasn't able to send my greeting!\n{}".format(server.name, sys.exc_info()))
 
 
-@client.event #If I'm right about the other @ symbol, then I'm still confused about this one.
+@client.event #If I'm right about the other decorator, then I'm still confused about this one.
 #How does it know where to stop? Are you just supposed to put it above a function and if it
 #wants that function it calls it, otherwise it ignores it?
 async def on_ready():
