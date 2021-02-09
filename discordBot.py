@@ -27,8 +27,7 @@ prefix = {}
 #BOT LOGIC
 
 
-@client.event #I still don't understand this. I think what happens is that discord.Client() is
-#passively running, and when it triggers an event, this code gets run.
+@client.event
 async def on_message(m):
     if pre.logger is not None:
         try:
@@ -91,9 +90,7 @@ async def on_server_join(server):
             print("I just joined {} but I wasn't able to send my greeting!\n{}".format(server.name, sys.exc_info()))
 
 
-@client.event #If I'm right about the other @ symbol, then I'm still confused about this one.
-#How does it know where to stop? Are you just supposed to put it above a function and if it
-#wants that function it calls it, otherwise it ignores it?
+@client.event
 async def on_ready():
     print('Oofbot online and ready!')
     await pre.init(client)
