@@ -373,11 +373,11 @@ async def reboot(m, client):
 commands['reboot'] = reboot
 cmdHelp['reboot'] = kyleMsg
 
-async def kys(m, client):
-    if m.content[0].lower() == 'kys':
+async def gotobed(m, client):
+    if m.content[0].lower() == 'gotobed':
         if await pre.permCheck('kyle', m):
             await client.send_message(m.channel, "Jeez, okay, I can see when I'm not wanted anymore...")
             await client.logout()
     return True
-commands['kys'] = kys
-cmdHelp['kys'] = 'I feel this one deserves explaining. It disables the bot.'
+commands['gotobed'] = gotobed
+cmdHelp['gotobed'] = 'Disables the bot.'
